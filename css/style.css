@@ -1,0 +1,539 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* -----------HEADER--------- */
+
+.barra {
+    background-color: #4CC9F0;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.navbar {
+    max-width: 50%;
+}
+
+.enlaces {
+    display: flex;
+}
+
+.enlaces li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.enlaces li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* -----------PAGINA PRESENTACION--------- */
+
+.principal {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.contenedor h1,
+h2 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.contenedor h1 {
+    font-size: 6rem;
+    padding-top: 200px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.contenedor h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-principal {
+    padding: .7rem;
+    border: 1px solid #48CAE4;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.botones-principal {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.botones-principal a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.botones-principal a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #48CAE4;
+}
+
+
+/* Sobre Mi */
+
+.contenedor-sobre-mi {
+    color: #fff;
+    background-color: #000;
+    padding-top: 60px;
+}
+
+.contenido-sobre-mi {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.sobre-mi {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor-sobre-mi .contenedor h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #48CAE4;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mi p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.sobre-mi-foto {
+    max-width: 20%;
+    text-align: center;
+}
+
+.sobre-mi-foto img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.btn-amarillo {
+    padding: 3px 30px 3px 30px;
+    border: 1px solid #FFBE0B;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-amarillo:hover {
+    background: #FFBE0B;
+    color: #000;
+}
+
+
+/* ESTUDIOS */
+
+.estudios {
+    margin-top: 60px;
+}
+
+.mis-estudios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.instituciones {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.idiomas {
+    width: 45%;
+    margin: 0;
+}
+
+table,
+td,
+th {
+    border: 1px solid #48CAE4;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* HABILIDADES */
+
+.habilidades h2 {
+    padding-top: 60px;
+}
+
+.mis-habilidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.mis-habilidades li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ac60df;
+}
+
+.letra {
+    position: relative;
+    color: white;
+}
+
+.letra::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: whitesmoke;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.mis-habilidades li:hover .letra::after {
+    width: 100%;
+    left: 0;
+}
+
+.mis-habilidades {
+    margin: 0;
+}
+
+.mis-habilidades li i {
+    font-size: 6rem;
+    filter: none;
+    transition: filter 0.4s ease-in-out;
+}
+
+.mis-habilidades li i:hover {
+    /* filter: drop-shadow(3px 0px 1px #f79b5d);
+    transition: filter 0.1s ease-in-out; */
+    cursor: pointer;
+}
+
+
+/* PROYECTOS */
+
+.seccion-proyectos {
+    background-color: #000;
+}
+
+.seccion-proyectos h2 {
+    color: #48CAE4;
+    font-weight: 400;
+    padding: 60px 0 70px 0;
+    font-size: 35px;
+}
+
+.widgets-proyectos {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carta {
+    border: 1px solid #48CAE4;
+    width: 200px;
+    height: 300px;
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    margin: 20px;
+}
+
+.carta .imgBx {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.carta:hover {
+    background-color: rgba(61, 61, 61, 0.25);
+    color: #000;
+    border: 1px solid #f79b5d;
+    cursor: pointer;
+}
+
+.carta .content {
+    color: #fff;
+    height: 40%;
+    text-align: center;
+    max-height: 40%;
+    margin: 0;
+}
+
+.carta .content p {
+    font-size: 14px;
+}
+
+.carta a {
+    text-decoration: none;
+}
+
+
+/* CONTACTO */
+
+.contact {
+    background-color: #000;
+}
+
+.contact h2 {
+    color: #48CAE4;
+    font-weight: 400;
+    padding: 60px 0 40px 0;
+    font-size: 35px;
+}
+
+.formulario {
+    border-radius: 5px;
+    padding: 20px;
+    /* width: 500px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-color: #48CAE4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: none;
+    color: #fff;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #f79b5d;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #f79b5d;
+}
+
+.contact h4 {
+    color: #48CAE4;
+    font-weight: 400;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+button[type=submit] {
+    background: none;
+    color: #757575;
+    padding: 12px 20px;
+    border: 1px solid #0ECEFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #0ECEFF;
+    color: #fff;
+}
+
+.mis-redes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 140px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+.redes-sociales ul li {
+    list-style: none;
+    border: 2px solid #48CAE4;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.mis-redes li a {
+    padding: 2px;
+    color: #48CAE4;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.ir-arriba {
+    display: none;
+    padding: 20px;
+    background: #ffee00;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+span i {
+    color: #000;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 768px) {
+    .barra {
+        display: none;
+    }
+    .formulario {
+        max-width: 80%;
+        width: 100%;
+    }
+    .mis-habilidades li {
+        font-size: 1rem;
+        flex: 0 0 33.333333%
+    }
+    .contenido-sobre-mi {
+        flex-direction: column;
+    }
+    .sobre-mi p {
+        font-size: 15px;
+    }
+    .ir-arriba {
+        padding: 8px;
+        font-size: 16px;
+        right: 5px;
+    }
+    .mis-estudios {
+        flex-direction: column;
+        align-items: center;
+    }
+    .instituciones {
+        margin-left: 0;
+    }
+    .idiomas {
+        margin: 0;
+    }
+}
+
+@media(min-width: 768px) {
+    .formulario {
+        width: 500px;
+    }
+}
+
+@media(max-width: 468px) {
+    .mis-habilidades li {
+        font-size: 1rem;
+        flex: 0 0 50%
+    }
+    .btn-principal {
+        padding: .4rem;
+        margin-left: 1px;
+    }
+}
+
+@media(max-width: 400px) {
+    .botones-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .primera-pantalla h1 {
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+    }
+    .mis-habilidades li {
+        font-size: 1rem;
+        flex: 0 0 100%;
+    }
+    .contenedor h1 {
+        font-size: 22vw;
+    }
+}
+
+@media(max-width: 300px) {
+    .sobre-mi-foto {
+        justify-content: center;
+    }
+    .contenido-redes h4 {
+        margin: 0 2px 0 2px;
+    }
+}
+
+.carta {
+    flex: 0 0 100%;
+}
