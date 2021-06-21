@@ -170,6 +170,8 @@ h2 {
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn-amarillo:hover {
