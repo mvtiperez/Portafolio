@@ -149,13 +149,13 @@ h2 {
 }
 
 .sobre-mi p {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     line-height: 1.4;
 }
 
 .sobre-mi-foto {
-    max-width: 20%;
+    max-width: 25%;
     text-align: center;
 }
 
@@ -190,16 +190,23 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    line-height: 1.3;
 }
 
 .instituciones {
     width: 50%;
     margin-left: 30px;
 }
-
+.instituciones p{
+    font-size: 13px;
+}
 .idiomas {
     width: 45%;
     margin: 0;
+}
+.titu-carrera{
+    font-weight: bold;
+    font-size: 17px;
 }
 
 table,
@@ -556,6 +563,10 @@ span i {
     }
     .contenedor h1 {
         font-size: 22vw;
+    }
+    
+    h2 {
+        font-size: 20vw;
     }
 }
 
