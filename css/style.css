@@ -197,14 +197,17 @@ h2 {
     width: 50%;
     margin-left: 30px;
 }
-.instituciones p{
+
+.instituciones p {
     font-size: 13px;
 }
+
 .idiomas {
     width: 45%;
     margin: 0;
 }
-.titu-carrera{
+
+.titu-carrera {
     font-weight: bold;
     font-size: 17px;
 }
@@ -564,7 +567,6 @@ span i {
     .contenedor h1 {
         font-size: 22vw;
     }
-    
     h2 {
         font-size: 20vw;
     }
