@@ -81,7 +81,6 @@ h2 {
 
 .contenedor h1 {
     font-size: 6rem;
-    padding-top: 200px;
     margin-bottom: 20px;
     font-weight: 400;
 }
@@ -90,6 +89,13 @@ h2 {
     font-weight: 300;
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.primera-pantalla {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
 }
 
 .btn-principal {
@@ -106,7 +112,9 @@ h2 {
     margin: 0 auto;
     max-width: 600px;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-around;
+    width: 50%;
+    flex-wrap: wrap;
 }
 
 .btn-principal {
@@ -144,8 +152,8 @@ h2 {
 }
 
 .contenedor-sobre-mi .contenedor h2 {
-    font-weight: 300;
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 35px;
     color: #48CAE4;
     display: flex;
     justify-content: center;
@@ -158,7 +166,7 @@ h2 {
 }
 
 .sobre-mi-foto {
-    max-width: 25%;
+    max-width: 30%;
     text-align: center;
 }
 
@@ -319,7 +327,6 @@ table {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .carta {
@@ -503,6 +510,60 @@ span i {
 }
 
 
+/* PAGINA PROYECTO */
+
+.cards__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 330px;
+    height: 500px;
+    color: #fff;
+    border: 1px solid #0ECEFF;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px;
+}
+
+.card__img {}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    align-items: center;
+}
+
+.card__info span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card__info p {
+    font-size: .9rem;
+}
+
+.card__info a {}
+
+.proy-tittle {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+}
+
+.contenedor .proy-tittle h1 {
+    font-size: 3rem;
+}
+
+
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
@@ -583,6 +644,10 @@ span i {
     }
     h2 {
         font-size: 20vw;
+    }
+    .carta {
+        max-width: 80%;
+        width: 100%;
     }
 }
 
