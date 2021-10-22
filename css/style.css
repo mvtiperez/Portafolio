@@ -616,6 +616,15 @@ span i {
     .idiomas {
         margin: 0;
     }
+    .navbar {
+        width: 100%;
+        z-index: 5;
+        position: fixed;
+        height: 50px;
+    }
+    .navbar a img {
+        width: 40px;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
