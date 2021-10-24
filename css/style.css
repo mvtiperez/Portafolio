@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 *,
 *:after,
 *:before {
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #000;
 }
 
@@ -57,17 +58,9 @@ a {
     width: 50%;
 }
 
-.nav-item {
-    /* margin-left: 5rem; */
-}
-
 .nav-link {
     font-size: 1.1rem;
     color: #fff;
-}
-
-.nav-link:hover {
-    color: #000;
 }
 
 .nav-logo {
@@ -114,7 +107,7 @@ h2 {
 }
 
 .btn-principal {
-    padding: .7rem;
+    padding: .8rem 0.1rem;
     border: 1px solid #48CAE4;
     border-radius: 10px;
     margin-top: 20px;
@@ -597,6 +590,7 @@ span i {
     }
     .contenido-sobre-mi {
         flex-direction: column;
+        padding-top: 0;
     }
     .sobre-mi p {
         font-size: 15px;
